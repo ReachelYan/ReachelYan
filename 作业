@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body{
+            background-image: url('5.jpg');
+            background-size: cover;
+            width:100% ;
+        }
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rfb(147,185,206); 
+            position:sticky;
+            top:0;
+            color: aliceblue;
+            width:100%;
+            font-size: 30px;
+            font-family:'Times New Roman', Times, serif;
+        }
+        
+        li image{
+            width: 10px;
+            height: 10px;
+            margin: auto;
+        }
+        dropbtn{
+            background-color: rgb9147,185,206;
+            color: aliceblue;
+            padding: 16px;
+            font-size:20px ;
+            border:none ;
+            cursor: pointer;
+
+        }
+        dropdown{
+            display: inline;
+        }
+dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px cornflowerblue;
+    z-index: 1;
+}
+dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline;
+    text-align: center;
+    background-color: rgb(255,234,241);
+}
+dropdown-content a:hover {background-color: rgb(255,164,194)}
+dropdown:hover,dropdown-content{
+    display: inline;
+}
+dropdown:hover,dropbtn{
+    background-color: rgb(255,234,241);
+    color: cornflowerblue;
+}
+input[type=text]{
+    width:120px;
+    box-sizing: border-box;
+    border: 2px solid #bbb;
+    border-radius:4px ;
+    font-size: 16px;
+    background-color: white;
+    background-image:url('3.jpg') ;
+    background-position: contain;
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    padding: 12px 500px 12px 40px;
+    transition: width 0.4s ease-in-out;
+    transform: translate(-50%,50%);
+    margin: 10%;
+    margin-left: 50%;
+    margin-bottom: 10px;
+}
+input[type=text]:focus{
+    width:60%
+}
+center{
+    padding: 70px 0;
+    border: 1px  rgb(204,231,255);
+    text-align: center;
+}
+button[type=submit]{
+    background-color:white;
+    color: black;
+    margin-left: 50%;
+    margin-top: 20px;
+    text-align: right;
+}
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+        <img src="4.jpg" title="image" width="40px"> <a herf="picture.asp">picture</a>  <a herf="video.asp">video</a> </ <div class="dropdown">  <a herf="#">brands</a>  <a herf="#">personal</a>
+                <button class="dropbtn">more</button>
+                <div class="dropdown-content">
+                  
+                </div>
+            </div>
+        
+        </ul>
+    </div>
+    <input type="text" size="40" name="search" class="center">
+    <button type="submit">search</button>
+</body>
+</html>
